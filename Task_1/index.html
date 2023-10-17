@@ -9,14 +9,57 @@
     <!-- <script defer src="../Task_3/app.js"></script> -->
     <!-- <script defer src="../Task_4/app.js"></script> -->
     <!-- <script defer src="../Task_5/app.js"></script> -->
-    <!-- <script defer src="../Task_6/app.js"></script> -->
+    <script defer src="../Task_6/app.js"></script>
     <title>Dom Practical - Tasks 1 to 6</title>
   </head>
   <body>
-    <a href="https://codepen.io/andrushka/pen/rNdQmOd">Codepen Link to animal pictures</a><br />
-    <a href="#">Completed tasks Codepen Link</a>
+ 
     <main class="container">
-      
+      <header>
+        <h1>Animal Finder</h1>
+        <p class="form-preamble">Use this to search for your favourite animals</p>
+        </header>
+    
+
+          <form id="filters">
+            <fieldset>
+              <legend>Type</legend>
+               <input type="radio" id="bear" name="animalType" value="bear">
+               <label for="bear">Bears</label><br>
+               <input type="radio" id="manatee" name="animalType" value="manatee">
+               <label for="manatee">Manatees</label><br>
+               <input type="radio" id="snake" name="animalType" value="snake">
+               <label for="snake">Snakes</label><br>
+               <input type="radio" id="squirrel" name="animalType" value="squirrel">
+               <label for="squirrel">Squirrels</label><br>
+               <input type="radio" id="all" name="animalType" value="all" checked>
+               <label for="all">Show all</label><br>  
+            </fieldset>
+              <label for="search">Search:</label>
+              <input type="search" id="search" name="search" />
+              <button>Search</button>
+          </form>
+        <br>
+
+    <div id="summary"></div>
+    <div id="results">
+       <img animal="bear" class="imageFilter" loading="lazy" src="https://images.pexels.com/photos/158109/kodiak-brown-bear-adult-portrait-wildlife-158109.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=350" alt="Brown Bear on a Body of Water ">
+       <img animal="manatee" class="imageFilter" loading="lazy" src="https://images.pexels.com/photos/5254812/pexels-photo-5254812.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=350" alt="Manatee Floating in Water">
+       <img animal="snake" class="imageFilter" loading="lazy" src="https://images.pexels.com/photos/34426/snake-rainbow-boa-reptile-scale.jpg?auto=compress&amp;cs=tinysrgb&amp;h=350" alt="Person Holding Red and Black Snake">
+       <img animal="squirrel" class="imageFilter" loading="lazy" src="https://images.pexels.com/photos/47547/squirrel-animal-cute-rodents-47547.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=350" alt="Brown Squirrel">
+       <img animal="bear" class="imageFilter" loading="lazy" src="https://images.pexels.com/photos/35435/pexels-photo.jpg?auto=compress&amp;cs=tinysrgb&amp;h=350" alt="Brown Bear">
+       <img animal="manatee" class="imageFilter" loading="lazy" src="https://images.pexels.com/photos/4766707/pexels-photo-4766707.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=350" alt="Manatee under Water">
+       <img animal="snake" class="imageFilter" loading="lazy" src="https://images.pexels.com/photos/80474/grass-snake-snake-serpentes-natrix-80474.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=350" alt="White and Black Snake on Close Up Photography">
+       <img animal="squirrel" class="imageFilter" loading="lazy" src="https://images.pexels.com/photos/47359/squirrel-wildlife-nature-animal-47359.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=350" alt="Photo of Squirrel Holding Nut During Daytime">
+       <img animal="bear" class="imageFilter" loading="lazy" src="https://images.pexels.com/photos/1068554/pexels-photo-1068554.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=350" alt="Close-Up Photography of Grizzly Bear">
+       <img animal="manatee" class="imageFilter" loading="lazy" src="https://images.pexels.com/photos/8026836/pexels-photo-8026836.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=350" alt="An Underwater Photography of a Manatee Submerged in in the Sea">
+       <img animal="snake" class="imageFilter" loading="lazy" src="https://images.pexels.com/photos/106690/pexels-photo-106690.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=350" alt="Brown Snake">
+       <img animal="squirrel" class="imageFilter" loading="lazy" src="https://images.pexels.com/photos/1571117/pexels-photo-1571117.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=350" alt="Brown Squirrel on Gray Tree Trunk">
+       <img animal="bear" class="imageFilter" loading="lazy" src="https://images.pexels.com/photos/598966/pexels-photo-598966.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=350" alt="Grayscale Photo of a Polar Bear Cub ">
+       <img animal="manatee" class="imageFilter" loading="lazy" src="https://images.pexels.com/photos/12313571/pexels-photo-12313571.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=350" alt="Close Up Shot of a Manatee">
+       <img animal="snake" class="imageFilter" loading="lazy" src="https://images.pexels.com/photos/23817/pexels-photo.jpg?auto=compress&amp;cs=tinysrgb&amp;h=350" alt="Grey and Brown Snake Opening Mouth">
+       <img animal="squirrel" class="imageFilter" loading="lazy" src="https://images.pexels.com/photos/1161556/pexels-photo-1161556.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=350" alt="Selective Focus Photography of Squirrel">
+      </div>
     </main>
   </body>
 </html>
